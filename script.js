@@ -31,8 +31,8 @@ const handleSearch = () => {
 
             list.appendChild(newList);
         }
-    } else {
-        return;
+    } else if (allResults.length === 0) {
+        alert('No results found');
     }
   };
     request.send();
